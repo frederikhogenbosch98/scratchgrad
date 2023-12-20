@@ -1,10 +1,12 @@
-import sys
-sys.path.append("../")
+#!/usr/bin/env python3
+import os, sys, traceback
+sys.path.append(f'{os.getcwd()}/scratchgrad')
 
 import numpy as np
-import scratchgrad.tensor as tn
+from tensor import Tensor
 
 
-tn.Tensor([1,2])
 
+print(Tensor.randn(2, 2, 3, 2))
+T1 = Tensor(np.ones([1,2]))
 
